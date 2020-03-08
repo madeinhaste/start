@@ -1,0 +1,44 @@
+.webgl-error {
+    box-sizing: border-box;
+    display: none;
+
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0 12px 12px 12px;
+    z-index: 100;
+
+    background-color: rgba(20,20,20, 0.9);
+    font: 16px 'JetBrains Mono';
+    color: #ccc;
+    white-space: pre-wrap;
+}
+
+.webgl-error-log {
+    font-style: italic;
+    font-weight: 700;
+    margin: 8px 0;
+    color: #8d8;
+}
+
+.webgl-error-log-error {
+    color: #f88;
+}
+
+.webgl-error-log-warning {
+    color: #679;
+}
+
+.webgl-error-info {
+    color: #8d8;
+    font-style: italic;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.webgl-error-highlight {
+    /* color: #f4f; */
+    background-color: #646;
+    color: #fff;
+}

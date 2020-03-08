@@ -1,0 +1,128 @@
+/* feather sprites */
+
+.feather {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+/* params styling */
+
+.param-container {
+    position: absolute;
+    padding: 8px 8px;
+    background-color: #333;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.param {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.param:hover {
+}
+
+.param-label {
+    display: block;
+    width: 150px;
+    font-family: 'Fira Sans';
+    color: #888;
+}
+
+.param-label:hover {
+    color: #cfc;
+}
+
+.param-group {
+    color: #898;
+}
+
+.param-group:hover {
+    color: #cfc;
+}
+
+.param-group-icon {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.param-group-label {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 2px;
+    /* text-decoration: underline; */
+    /* background-color: #222; */
+    font-family: 'Fira Sans';
+    /* font-style: italic; */
+    font-weight: 700;
+    /* text-transform: uppercase; */
+     /* text-transform: uppercase; */ */
+}
+
+.param-group-content {
+    margin-left: 20px;
+}
+
+.param-value {
+    box-sizing: border-box;
+    display: block;
+    /* width: 60px; */
+    text-align: right;
+    cursor: crosshair;
+    font-family: 'Fira Mono';
+    font-size: 13px;
+    background-color: blue;
+    margin: 3px 0;
+    margin-left: 4px;
+    padding: 4px 4px;
+    flex: 1;
+    background-color: #282828;
+    border-radius: 3px;
+    border: 1px solid #181818;
+    color: #888;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.param-value:hover {
+    background-color: #336;
+    border-color: #569;
+    color: #fff;
+}
+
+.param-sliders {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 200px;
+    /* background-color: red; */
+}
+
+input[type=checkbox].param-value {
+    display: inline-block;
+    flex: none;
+    width: 25px;
+    height: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=checkbox].param-value:checked {
+    background-image: url( ../icons/check.svg );
+}
+
+input[type=checkbox].param-value:focus {
+    outline: none;
+}
